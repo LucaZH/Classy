@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='asset/styles.css')}}">
+    <title>Classification</title>
+</head>
+<body>
+    <section class="upload-section">
+        <h2>Uploader un fichier</h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <label for="file" class="upload-btn">Choisir un fichier text</label>
+            <input type="submit" value="Upload" class="submit-btn">
+            
+        </form>
+        <p>{{ content }}</p>
+    </section>
+
+</body>
+</html>
